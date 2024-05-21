@@ -10,14 +10,14 @@ const PinnedPaperGreen = () => {
       animate={{ opacity: 1, scale: 1 }}
       whileHover={{ scale: [null, 1.2, 1.1] }}
       transition={{
-        opacity: { duration: 0.8, delay: 2, ease: "linear" },
+        opacity: { duration: 0.8, delay: 1.5, ease: "linear" },
         scale: {
           type: "spring",
           damping: 5,
           stiffness: 100,
           restDelta: 0.001,
           duration: 0.8,
-          delay: 2, // Apply delay to the scale transition as well
+          delay: 1.5, // Apply delay to the scale transition as well
         },
       }}
     >
@@ -36,21 +36,22 @@ const PinnedPaperGreen = () => {
             className="rounded-full"
           />
           <br />
-          <div className="flex flex-col justify-center pt-20">
-            <p className="text-2xl">Atish Maharjan</p>
-            <p className="text-xs">
-              <small>Lalitpur, Nepal 🇳🇵</small>
-            </p>
+          <div className="flex flex-row justify-between">
+            <div className="flex flex-col justify-center">
+              <p className="text-2xl">Atish Maharjan</p>
+              <p className="text-xs">
+                <small>Lalitpur, Nepal 🇳🇵</small>
+              </p>
 
-            <p>Senior Frontend Engineer</p>
-            <p>
-              <small>arcrt1993@gmail.com</small>
-            </p>
-            <p>
-              <small>+977-9866265050</small>
-            </p>
-            <br />
-            <div className="flex flex-row justify-center">
+              <p>Senior Frontend Engineer &nbsp;</p>
+              <p>
+                <small>arcrt1993@gmail.com</small>
+              </p>
+              <p>
+                <small>+977-9866265050</small>
+              </p>
+            </div>
+            <div style={{ marginRight: "-20px" }}>
               <a
                 target="_blank"
                 href="https://www.linkedin.com/in/atish-maharjan-862ba8112/"

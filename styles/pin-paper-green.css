@@ -8,8 +8,8 @@
     padding: 20px;
     background: #8C908F;
     box-shadow: 3px 3px 2px #C2C2C2;
-    transform: rotate(-8deg);
-    transform-origin: top left;
+    /* transform: rotate(-8deg);
+    transform-origin: top left; */
   }
   
   .pin-paper-green p {

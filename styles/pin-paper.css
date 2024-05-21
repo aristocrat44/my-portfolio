@@ -10,8 +10,8 @@
     padding: 20px;
     background: #E4DAE2;
     box-shadow: 3px 3px 2px #ddbbcf;
-    transform: rotate(10deg);
-    transform-origin: top left;
+    /* transform: rotate(10deg);
+    transform-origin: top left; */
   }
   
   .pin-paper p {
@@ -28,7 +28,7 @@
     left: 12px;
     width: 60px;
     height: 50px;
-    top: 0px;
+    top: -12px;
   }
   
   .shadow {
@@ -108,4 +108,27 @@
       var(--pin-dark) 80%
     );
   }
+
+  .inputfield {
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    color: gray;
+    margin: 5px 0px 10px 0px;
+  }
+
+  .textarea {
+    border: 1px solid gray;
+    height: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    color: gray;
+    margin: 5px 0px 10px 0px;
+  }
   
+  .submitBtn {
+    width: 200px;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+  }

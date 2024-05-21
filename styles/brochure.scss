@@ -1,3 +1,7 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
 $clrPagesDark: #F3F1E5;
 $clrPagedLight: linear-gradient(to top, #F8EBE3 0%, #FFFFFF 100%);
 
@@ -18,33 +22,41 @@ $clrPagedLight: linear-gradient(to top, #F8EBE3 0%, #FFFFFF 100%);
 .brochure {
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   height: 250px;
-  width: 1280px;
   perspective: 2000px;
-  @include mediaMaxW(1228px) {
-    width: 960px;
-  }
+  transform: translateY(100%);
+  animation: init 1s ease-in-out forwards;
+  animation-delay: 2s;
+ width: 100%;
+  @media (max-width: 1220px) {
+    display: none;
+ }
+ 
   ////////////// Pages ////////////////
   &__pages {
     position: relative;
     height: 250px;
-    width: calc(100% / 6);
+    width: calc(60% / 4);
     overflow: hidden;
+    
     
     &--page2 {
       transform: rotateY(30deg);
-      left: -2.20%;
+      // left: -2.20%;
       background-image: $clrPagedLight;
       box-shadow: -110px 65px 180px -38px rgba(0, 0, 0, 0.5), 25px 40px 180px -38px rgba(0, 0, 0, 0.5), 160px 20px 180px -38px rgba(0, 0, 0, 0.5);
       @include mediaMaxW(1228px) {
         box-shadow: -100px 50px 180px -38px rgba(0, 0, 0, 1), 25px 40px 180px -38px rgba(0, 0, 0, 0.5), 160px 20px 180px -38px rgba(0, 0, 0, 0.5);
       }
       .page2-heading {
-        margin: 20px 0 0 20px;
+        margin: 20px 0 0 10px;
         text-transform: uppercase;
         color: #afafaf;
         font: {
           size: 14px;
+          
         }
       }
       &:after {
@@ -71,7 +83,7 @@ $clrPagedLight: linear-gradient(to top, #F8EBE3 0%, #FFFFFF 100%);
     }
     &--page3 {
       background-color: $clrPagesDark;
-      left: -4.5%;
+      // left: -4.5%;
       transform: rotateY(-30deg);
       box-shadow: 80px 51px 215px -38px rgba(0, 0, 0, 0.75);
       overflow: initial;
@@ -87,11 +99,11 @@ $clrPagedLight: linear-gradient(to top, #F8EBE3 0%, #FFFFFF 100%);
     &--page4 {
       @extend .brochure__pages--page2;
       box-shadow: 0 0 2px rgba(0,0,0,.1);
-      left: -6.80%;
+      // left: -6.80%;
       z-index: 1;
     }
     &--page5 {
-      left: -9.05%;
+      // left: -9.05%;
       transform: translate3d(0, 0, 0);
       transform: rotateY(-30deg);
       background-color: $clrPagesDark;
@@ -111,15 +123,28 @@ $clrPagedLight: linear-gradient(to top, #F8EBE3 0%, #FFFFFF 100%);
   ////////////// Icons ///////////////
 
   .icons {
-    margin-top: 5px;
     width: 100%;
     height: 100%;
     text-align: center;
+    padding: 10px;
   }
   .page3-icons,
   .page4-icons,
   .page5-icons {
     margin-top: 35px;
+  }
+
+  .icons-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow items to wrap */
+    height: 50px !important;
+  }
+  
+
+  .icons-block {
+    width: 50px;
+    height: 50px;
   }
    
   
