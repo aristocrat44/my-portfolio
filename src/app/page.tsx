@@ -9,6 +9,7 @@ import { projects } from "../../constants/projects";
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
+  // landing page
   return (
     <main className="flex min-h-screen flex-col justify-between mx-10">
       <motion.div
