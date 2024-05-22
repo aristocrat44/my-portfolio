@@ -25,6 +25,7 @@ export default function Home() {
       <section className="my-10">
         <Brochure />
       </section>
+      <p className="flex flex-row justify-center">WORK AND EXPERIENCE</p>
       <section className="flex flex-wrap justify-around mb-3">
         {projects.map((project, i) => (
           <div key={i}>

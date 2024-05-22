@@ -25,7 +25,7 @@ export const projects = [
     website: "https://mercanto.mx/",
     desc: "B2b E-commerce Platform (Mexico)",
     timeframe: "Dec 2022 - Dec 2023",
-    title: "Team Lead",
+    title: "Frontend Lead",
     work: "Responsible for leading a small team for building and transitioning a Shopify based B2B e-commerce platform into optimized web application. Includes reviewing pull requests and feature discussion meetings. For the most part, worked more on the provisioning side, splitting and building cross domain platforms integrating webbooks and openAPIs of Shopify giving it a modern touch.",
     tech: [
       "React Vite",

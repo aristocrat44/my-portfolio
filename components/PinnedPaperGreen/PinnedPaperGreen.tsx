@@ -29,7 +29,7 @@ const PinnedPaperGreen = () => {
         </div>
         <div className="flex flex-col items-center justify-center">
           <Image
-            src="/avatar.jpg"
+            src="/circular-me.png"
             alt="Picture of the author"
             width="200"
             height="200"
@@ -102,19 +102,6 @@ const PinnedPaperGreen = () => {
                   width="30"
                   height="30"
                   alt="hackerrank"
-                />
-              </a>
-
-              <a
-                target="_blank"
-                href="https://www.instagram.com/aristocrat44_?igsh=MWNxbXc3Mm1qOXN1NQ%3D%3D&utm_source=qr"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  src="/svg/icons8-instagram.svg"
-                  width="30"
-                  height="30"
-                  alt="ig"
                 />
               </a>
             </div>
